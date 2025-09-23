@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links and Images</title>
+    </head>
+    <body>
+        <h2>Anchor Tag Example</h2>
+        <a href="https://www.google.com" target="_blank">গুগলে যান</a>  <!-- _self (ডিফল্ট) → একই ট্যাবে খুলবে। _blank → নতুন ট্যাবে খুলবে। _parent → parent ফ্রেমে খুলবে। _top → পুরো উইন্ডোতে খুলবে। -->
+
+        <h2>Link Example with Image</h2>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://www.w3schools.com/html/img_chania.jpg" 
+                alt="Google এ যান"
+                width="250">
+        </a>
+
+        <h2>Image Tag Example</h2>
+        <img src="https://www.w3schools.com/html/img_chania.jpg" 
+            alt="Beautiful Flowers"
+            width="300"
+            height="200"
+            border="20"
+            hspace="100"
+            vspace="100">
+
+        <!-- img ট্যাগে সবসময় alt (alternative text) ব্যবহার করা উচিত, কারণ:
+            1. সার্চ ইঞ্জিন ছবির ভেতরের লেখা "পড়তে" পারে না। তাই alt টেক্সট দেখে বুঝে ছবির কনটেন্ট কী।
+            ফলে ছবির মাধ্যমে ওয়েবপেজ সার্চ রেজাল্টে ভালোভাবে দেখায়।
+
+            2. যেসব মানুষ Screen Reader ব্যবহার করেন (অন্ধ/দৃষ্টিশক্তি সমস্যায় ভুগছেন), তাদের সফটওয়্যার alt টেক্সট পড়ে শুনিয়ে দেয়।
+            এতে তারা ছবির অর্থ বুঝতে পারেন।
+        -->
+
+        <img src="https://www.w3schools.com/html/img_chania.jpg" 
+            alt="সুন্দর ফুলের ছবি"
+            width="300">    <!-- যদি ছবি লোড না হয়, তাহলে টেক্সট “সুন্দর ফুলের ছবি” দেখা যাবে। সার্চ ইঞ্জিনও বুঝবে ছবিতে ফুল আছে।-->
+
+        <img src="images/iphone15.jpg" 
+            alt="iPhone 15 Pro Max সিলভার রঙের মোবাইল"
+            width="250">
+
+        <img src="images/logo.png" 
+            alt="OpenAI কোম্পানির লোগো"
+            height="100">
+
+    </body>
+</html>

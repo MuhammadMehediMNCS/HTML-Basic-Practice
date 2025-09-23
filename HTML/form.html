@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Practice with AI</h2>
+        <!-- Form: action (যে URL-এ ডাটা যাবে), method (GET/POST) -->
+        <form action="/submit-form" method="post" name="contactForm">
+            <!-- Text input -->
+            <label for="fullname">পূর্ণ নাম:</label>
+            <input
+            type="text"
+            id="fullname"
+            name="fullname"            <!-- server-side field name -->
+            value="মেহেদী হাসান"      <!-- প্রাথমিক মান -->
+            placeholder="তোমার নাম লিখো"
+            required
+            />
+            <br/><br/>
+
+            <!-- Email input -->
+            <label for="email">ইমেইল:</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@example.com"
+            required
+            />
+            <br/><br/>
+
+            <!-- Password input -->
+            <label for="pwd">পাসওয়ার্ড:</label>
+            <input
+            type="password"
+            id="pwd"
+            name="password"
+            minlength="6"
+            required
+            />
+            <br/><br/>
+
+            <!-- Textarea -->
+            <label for="message">ম্যাসেজ:</label>
+            <br/>
+            <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="তুমি কি জানাতে চাও..."
+            >প্রাথমিক টেক্সট এখানে থাকতে পারে</textarea>
+            <br/><br/>
+
+            <!-- Select with options -->
+            <label for="country">দেশ:</label>
+            <select id="country" name="country">
+            <option value="">— সিলেক্ট করো —</option>
+            <option value="bd" selected>Bangladesh</option>
+            <option value="in">India</option>
+            <option value="pk">Pakistan</option>
+            </select>
+            <br/><br/>
+
+            <!-- Hidden input (server-কে প্রেরণ করা কিন্তু ব্যবহারকারী দেখবে না) -->
+            <input type="hidden" name="formVersion" value="v1.0" />
+
+            <!-- Buttons -->
+            <button type="submit">জমা দাও</button>
+            <button type="reset">রিসেট</button>
+        </form>
+
+
+        <h2>Pracice with Video</h2>
+        <form action="">
+            <div>
+                <label for="fullname">FullName : </label>
+                <input type="text" name="fullname" id="fullname" required>
+            </div> <br>
+
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+            </div> <br>
+
+            <div>
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </div> <br>
+
+            <div>
+                <label for="dob">Date of Birth : </label>
+                <input type="date" name="dob" id="dob">
+            </div> <br>
+
+            <div>
+                <label for="photo">Choose Image : </label>
+                <input type="file" name="photo" id="photo">
+            </div> <br>
+
+            <div>
+                <label for="gender">Gender : </label>
+                <input type="radio" name="gender" id="gender" value="male">Male
+                <input type="radio" name="gender" id="gender" value="female">Female
+            </div> <br>
+
+            <div>
+                <label for="religion">Religion : </label>
+                <input type="checkbox" name="c1" id="islam" value="islam" selected>Islam
+                <input type="checkbox" name="c1" id="hindu" value="hindu">Hindu
+            </div> <br>
+
+            <div>
+                <label for="department">Department : </label>
+                <select name="department" id="department">
+                    <option value="science">Science</option>
+                    <option value="humanities" selected>Humanities</option>
+                    <option value="commerce">Commerce</option>
+                </select>
+            </div> <br>
+            <div>
+                <label for="message">Message : </label> <br>
+                <textarea name="message" id="message" cols="50" rows="30"></textarea>
+            </div> <br>
+
+            <div>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear All">
+            </div>
+        </form>
+    </body>
+</html>

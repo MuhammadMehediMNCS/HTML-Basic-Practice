@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Tables</title>
+    </head>
+    <body>
+        <h2>1. Basic Table</h2>
+        <table border="1">
+            <tr>
+                <th>নাম</th>
+                <th>বয়স</th>
+                <th>শহর</th>
+            </tr>
+            <tr>
+                <td>মেহেদী হাসান</td>
+                <td>২২</td>
+                <td>ঢাকা</td>
+            </tr>
+            <tr>
+                <td>সাফরিম</td>
+                <td>২১</td>
+                <td>চট্টগ্রাম</td>
+            </tr>
+        </table>
+
+
+        <h2>2. Border Example</h2>
+        <table border="2">
+            <tr>
+                <th>প্রোডাক্ট</th>
+                <th>দাম</th>
+            </tr>
+            <tr>
+                <td>ল্যাপটপ</td>
+                <td>৫০,০০০৳</td>
+            </tr>
+            <tr>
+                <td>মোবাইল</td>
+                <td>২০,০০০৳</td>
+            </tr>
+        </table>
+
+
+        <h2>3. Colspan Example</h2>
+        <table border="1">
+            <tr>
+                <th>নাম</th>
+                <th colspan="2">যোগাযোগ</th>
+            </tr>
+            <tr>
+                <td>মেহেদী হাসান</td>
+                <td>ফোন: 0123456789</td>
+                <td>ইমেইল: mehedi@example.com</td>
+            </tr>
+        </table>
+
+
+        <h2>4. Rowspan Example</h2>
+        <table border="1">
+            <tr>
+                <th rowspan="2">শিক্ষার্থীর নাম</th>
+                <th>বিষয়</th>
+                <th>নম্বর</th>
+            </tr>
+            <tr>
+                <td>গণিত</td>
+                <td>৮৫</td>
+            </tr>
+            <tr>
+                <td>সাফরিম</td>
+                <td>বাংলা</td>
+                <td>৯০</td>
+            </tr>
+        </table>
+
+
+        <caption>স্টুডেন্ট রেজাল্ট শীট</caption>
+        <table border="2" cellpadding="10" cellspacing="0">
+            <!-- টেবিল হেডার -->
+            <tr>
+                <th rowspan="2">নাম</th>
+                <th colspan="3">বিষয়ভিত্তিক নম্বর</th>
+                <th rowspan="2">মোট</th>
+            </tr>
+            <tr>
+                <th>বাংলা</th>
+                <th>ইংরেজি</th>
+                <th>গণিত</th>
+            </tr>
+
+            <!-- ডাটা সারি -->
+            <tr>
+                <td>মেহেদী হাসান</td>
+                <td>৮০</td>
+                <td>৭৫</td>
+                <td>৮৫</td>
+                <td>২৪০</td>
+            </tr>
+            <tr>
+                <td>সাফরিম</td>
+                <td>৭৮</td>
+                <td>৮২</td>
+                <td>৮৮</td>
+                <td>২৪৮</td>
+            </tr>
+
+            <!-- মোট যোগফল সারি -->
+            <tr>
+                <th colspan="4">সর্বমোট</th>
+                <th>৪৮৮</th>
+            </tr>
+        </table>
+    </body>
+</html>
