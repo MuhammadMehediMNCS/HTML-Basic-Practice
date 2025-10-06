@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Units Demo</title>
+  <style>
+    html {
+      font-size: 16px; /* rem base */
+    }
+    .container {
+      width: 80%; /* % unit */
+      margin: auto;
+      border: 2px solid #333;
+      padding: 10px;
+    }
+    .px-box {
+      width: 200px;
+      height: 100px;
+      background: lightblue;
+    }
+    .em-text {
+      font-size: 2em; /* relative to parent */
+    }
+    .rem-text {
+      font-size: 1.5rem; /* relative to root */
+    }
+    .vh-vw {
+      width: 50vw;  /* 50% of viewport width */
+      height: 20vh; /* 20% of viewport height */
+      background: lightgreen;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Units</h2>
+  <div class="container">
+    <div class="px-box">200px wide</div>
+    <p class="em-text">This is 2em text</p>
+    <p class="rem-text">This is 1.5rem text</p>
+    <div class="vh-vw">Viewport based box</div>
+  </div>
+</body>
+</html>
