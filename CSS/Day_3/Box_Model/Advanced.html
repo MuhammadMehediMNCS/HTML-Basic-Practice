@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Box Model Advanced</title>
+        <style>
+            .box-advanced {
+                width: 60%;                     /* responsive width */
+                max-width: 500px;               /* সর্বোচ্চ প্রস্থ */
+                background-color: #f0f8ff;
+
+                padding: 20px 40px;             /* top-bottom, left-right */
+                border: 3px dashed #008080;
+                margin: 50px auto;              /* auto = center align */
+
+                box-sizing: border-box;         /* padding+border কে width এর ভেতর ধরে */
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.2); /* ছায়া */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Box Model - Advanced</h2>
+        <div class="box-advanced">
+            এই বক্সে margin auto, box-sizing, এবং box-shadow ব্যবহার করা হয়েছে।
+        </div>
+    </body>
+</html>
