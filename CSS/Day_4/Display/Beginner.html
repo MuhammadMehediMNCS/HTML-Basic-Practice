@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Display Beginner</title>
+        <style>
+            .block {
+                display: block;              /* আলাদা লাইনে বসবে */
+                background: lightblue;
+                margin: 5px;
+            }
+
+            .inline {
+                display: inline;             /* একই লাইনে বসবে */
+                background: lightgreen;
+                margin: 5px;
+            }
+
+            .inline-block {
+                display: inline-block;       /* একই লাইনে বসবে + width/height নেওয়া যাবে */
+                width: 100px;
+                height: 40px;
+                background: orange;
+                margin: 5px;
+            }
+
+            .none {
+                display: none;               /* একদম লুকানো */
+                /* visibility: hidden;         /* জায়গা নিবে কিন্তু কিছুই দেখাবে না */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Display - Beginner</h2>
+        <div class="block">Block Element</div>
+        <span class="inline">Inline 1</span>
+        <span class="inline">Inline 2</span>
+        <div class="inline-block">Inline-Block 1</div>
+        <div class="inline-block">Inline-Block 2</div>
+        <div class="none">এটা দেখা যাবে না</div>
+    </body>
+</html>

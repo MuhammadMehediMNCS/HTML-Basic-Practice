@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Z-Index Advanced</title>
+        <style>
+            .container {
+                position: relative;
+                width: 400px;
+                height: 300px;
+                border: 2px solid #ccc;
+                margin: 50px;
+            }
+            .layer {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                opacity: 0.8;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                line-height: 200px;
+            }
+            .layer1 {
+                background: green;
+                top: 20px;
+                left: 20px;
+                z-index: 1;
+            }
+            .layer2 {
+                background: blue;
+                top: 60px;
+                left: 60px;
+                z-index: 2;
+            }
+            .layer3 {
+                background: red;
+                top: 100px;
+                left: 100px;
+                z-index: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Z-Index - Advanced</h2>
+        <div class="container">
+            <div class="layer layer1">Layer 1</div>
+            <div class="layer layer2">Layer 2</div>
+            <div class="layer layer3">Layer 3</div>
+        </div>
+    </body>
+</html>

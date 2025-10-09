@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position Beginner</title>
+        <style>
+            .static {
+                position: static; /* default অবস্থান */
+                background: lightgray;
+            }
+            .relative {
+                position: relative;
+                top: 20px;  /* নিজের আসল জায়গা থেকে 20px নিচে */
+                left: 20px; /* 20px ডানে */
+                background: lightblue;
+            }
+            .absolute {
+                position: absolute;
+                top: 10px;   /* parent এর ভিতর fix */
+                left: 150px;
+                background: lightgreen;
+            }
+            .fixed {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background: orange;
+            }
+            .sticky {
+                position: sticky;
+                top: 0;
+                background: pink;
+            }
+            div {
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Position - Beginner</h2>
+        <div class="static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="sticky">Sticky (স্ক্রল করলে উপরে আটকে থাকবে)</div>
+        <div class="fixed">Fixed (সবসময় স্ক্রিনে থাকবে)</div>
+
+        <p style="height:1000px">স্ক্রল করার জন্য extra height</p>
+    </body>
+</html>
