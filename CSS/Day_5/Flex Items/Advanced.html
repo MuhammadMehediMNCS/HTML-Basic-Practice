@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex Items Advanced</title>
+        <style>
+            .container {
+                display: flex;
+                border: 2px solid #ccc;
+                padding: 10px;
+            }
+            .item {
+                background: #74b9ff;
+                color: white;
+                padding: 20px;
+                margin: 5px;
+                text-align: center;
+                flex: 1 1 150px;   /* flex-grow:1, flex-shrink:1, flex-basis:150px */
+            }
+            .special {
+                order: -1;         /* আগে চলে আসবে */
+                flex: 2 0 200px;   /* দ্বিগুণ জায়গা, shrink করবে না */
+                background: #0984e3;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Flex Items - Advanced</h2>
+        <div class="container">
+            <div class="item">বক্স ১</div>
+            <div class="item special">বিশেষ বক্স</div>
+            <div class="item">বক্স ৩</div>
+            <div class="item">বক্স ৪</div>
+        </div>
+    </body>
+</html>

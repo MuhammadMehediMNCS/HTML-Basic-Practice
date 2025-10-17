@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flex Items Beginner</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid #333;
+        width: 600px;
+      }
+      .item {
+        background: lightgreen;
+        margin: 5px;
+        padding: 20px;
+        text-align: center;
+        flex-grow: 1;    /* সব সমানভাবে জায়গা নেবে */
+      }
+      .item:nth-child(2) {
+        flex-grow: 2;    /* দ্বিতীয় বক্স দ্বিগুণ জায়গা নেবে */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex Items - Beginner</h2>
+    <div class="container">
+      <div class="item">বক্স ১</div>
+      <div class="item">বক্স ২</div>
+      <div class="item">বক্স ৩</div>
+    </div>
+  </body>
+</html>

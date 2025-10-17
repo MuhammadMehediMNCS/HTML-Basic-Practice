@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Grid Beginner</title>
+        <style>
+            .grid-container {
+                display: grid; /* grid layout চালু করলাম */
+                grid-template-columns: 150px 150px 150px; /* ৩টি সমান কলাম */
+                grid-template-rows: 100px 100px;          /* ২টি সারি */
+                gap: 10px; /* কলাম ও সারির মাঝে ফাঁক */
+                background-color: lightgray;
+                padding: 10px;
+            }
+
+            .grid-item {
+                background-color: skyblue;
+                border: 2px solid blue;
+                text-align: center;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Beginner Grid Example</h2>
+
+        <div class="grid-container">
+            <div class="grid-item">১</div>
+            <div class="grid-item">২</div>
+            <div class="grid-item">৩</div>
+            <div class="grid-item">৪</div>
+            <div class="grid-item">৫</div>
+            <div class="grid-item">৬</div>
+        </div>
+
+    </body>
+</html>
+
+
+
+
+<!--
+ব্যাখ্যা :
+display: grid; → এটিই গ্রিড লেআউট সক্রিয় করে।
+
+grid-template-columns: 150px 150px 150px; → তিনটি সমান চওড়া কলাম তৈরি হয়।
+
+grid-template-rows: 100px 100px; → দুটি সারি (row)।
+
+gap: 10px; → কলাম ও সারির মধ্যে ১০ পিক্সেল ফাঁকা জায়গা।
+
+
+ফলাফল :
+৬টি বক্স ৩x২ আকারে সুন্দরভাবে গ্রিডে বসবে।
+-->

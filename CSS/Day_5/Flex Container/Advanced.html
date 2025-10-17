@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex Container Advanced</title>
+        <style>
+            .nav {
+                display: flex;
+                justify-content: space-between;   /* বাম-ডান দুই প্রান্তে */
+                align-items: center;              /* মাঝ বরাবর */
+                flex-wrap: nowrap;                /* এক লাইনে থাকবে */
+                background: #2c3e50;
+                padding: 10px 20px;
+            }
+            .logo {
+                color: white;
+                font-size: 20px;
+            }
+            .menu {
+                display: flex;
+                gap: 15px; /* ফাঁকা জায়গা */
+            }
+            .menu a {
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+            .menu a:hover {
+                background: #34495e;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Flex Container - Advanced</h2>
+        <div class="nav">
+            <div class="logo">আমার ওয়েবসাইট</div>
+            <div class="menu">
+            <a href="#">হোম</a>
+            <a href="#">সার্ভিস</a>
+            <a href="#">কন্টাক্ট</a>
+            </div>
+        </div>
+    </body>
+</html>

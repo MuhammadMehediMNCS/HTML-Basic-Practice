@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Query Beginner</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            .box {
+                background-color: teal;
+                color: white;
+                padding: 20px;
+                font-size: 24px;
+                width: 600px;
+                margin: 50px auto;
+            }
+
+            /* যখন স্ক্রিন 768px বা তার কম হবে */
+            @media (max-width: 768px) {
+                .box {
+                    background-color: tomato;
+                    width: 90%;
+                    font-size: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Beginner Media Query Example</h2>
+        <div class="box">এই Box রঙ ও সাইজ ছোট স্ক্রিনে বদলাবে</div>
+
+    </body>
+</html>
